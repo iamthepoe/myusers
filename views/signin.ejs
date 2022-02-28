@@ -1,0 +1,19 @@
+<%- include('partials/head.ejs'); %>
+<body>
+	<header class="signin-header">
+		<h1>MyUsers!</h1>
+	</header>
+	<main class="signin-main">
+		<div>
+			<form class="signin-main-form" method="post">
+				<input type="text" placeholder="Username" required>
+				<input id="password" type="password" placeholder="Password" required onkeyup="check();">
+				<input id="confirmPassword" type="password" placeholder="Confirm Password" required onkeyup="check();">
+				<button disabled id="sendaccount"><b>Send<b></button>
+			</form>	
+		</div>
+	</main>
+	<%- include('partials/footer.ejs'); %>
+	<script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
