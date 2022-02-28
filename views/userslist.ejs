@@ -1,0 +1,23 @@
+<%- include('partials/head.ejs'); %>
+<body>
+	<header class="signin-header">
+		<h1>MyUsers!</h1>
+	</header>
+	<main class="userlist-main">
+		<table class="userlist-table">
+			<tr class="userlist-table-row">
+				<th class="userlist-table-row-column">Username</th>
+				<th class="userlist-table-row-column">Password</th>
+			</tr>
+			<% user.forEach(myuser =>{%>
+					<tr>
+						<td class="userlist-table-row-column"><%=myuser.username%></td>	
+						<td class="userlist-table-row-column user-info"><%=myuser.password%></td>
+					</tr>
+			<%});%>
+		</table>	
+	</main>
+	
+	<script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
