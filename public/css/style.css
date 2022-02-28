@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Nunito+Sans&display=swap');
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Nunito Sans', sans-serif; 
+*/
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	background-color: #FEFFDE;
+}
+
+h1, h2{
+	padding: 10px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.index-header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 40vh;
+}
+
+.signin-header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 20vh;
+}
+
+.index-main{
+	width: 100%;
+	height: 45vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.signin-main{
+	width: 100%;
+	height: 65vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.signin-main-form{
+	display: flex;
+	flex-direction: column;
+}
+
+.signin-main-form > input{
+	width: 400px;
+	height: 50px;
+	margin: 4px;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+.signin-main-form > #sendaccount{
+	width: 400px;
+	height: 50px;
+	margin: 4px;
+	border-style: none;
+	border-radius: 40px;
+	background-color: #91C788;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 15px;
+}
+
+.signin-main-form > #sendaccount:hover{
+	background-color: #74AE6A;
+}
+
+@media (max-width: 530px) {
+	.index-main{
+		flex-direction: column;
+	}
+	.index-button{
+		margin: 5px;
+	}
+}
+
+.index-button{
+	width: 170px;
+	height: 80px;
+	border-style: none;
+	border-radius: 40px;
+	background-color: #91C788;
+	font-family: 'Nunito Sans', sans-serif; 
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.index-button:hover{
+	background-color: #74AE6A;
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 15vh;
+	background-color: #1a1919;
+}
