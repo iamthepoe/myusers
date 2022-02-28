@@ -1,0 +1,18 @@
+<%- include('partials/head.ejs'); %>
+<body>
+	<header class="login-header">
+		<h1>MyUsers!</h1>
+	</header>
+	<main class="login-main">
+		<div>
+			<form class="login-main-form" method="post" action="startinglogin">
+				<input type="text" name="username"id="username" placeholder="Username" required>
+				<input name = "password" id="password" type="password" placeholder="Password" required>
+				<button id="sendaccount"><b>Login<b></button>
+			</form>	
+		</div>
+	</main>
+	<%- include('partials/footer.ejs'); %>
+	<script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
