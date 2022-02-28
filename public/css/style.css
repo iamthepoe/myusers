@@ -83,6 +83,15 @@ h1, h2{
 	background-color: #74AE6A;
 }
 
+.passworderror-main{
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 @media (max-width: 530px) {
 	.index-main{
 		flex-direction: column;
